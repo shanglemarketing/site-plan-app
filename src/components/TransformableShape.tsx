@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from "react";
-import type { RefObject, ReactElement } from "react";
+import type { RefObject } from "react";
 import { Transformer } from "react-konva";
 import Konva from "konva";
 

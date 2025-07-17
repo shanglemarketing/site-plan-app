@@ -29,7 +29,7 @@ interface ShapeObject {
   rotation?: number;
 }
 
-const CanvasStage = (props: any, ref: React.Ref<any>) => {
+const CanvasStage = (_: any, ref: React.Ref<any>) => {
   const stageRef = useRef<Konva.Stage>(null);
   useImperativeHandle(ref, () => ({
     toDataURL: (options?: any) => {
@@ -369,8 +369,9 @@ const CanvasStage = (props: any, ref: React.Ref<any>) => {
 
             // 3. Ignore clicks on Transformer or its children
             const clickedTransformer = !!target.findAncestor(
-              (node) => node.getClassName() === "Transformer"
+              (node: Konva.Node) => node.getClassName() === "Transformer"
             );
+
             if (clickedTransformer) return;
 
             // 4. Handle selecting shapes
