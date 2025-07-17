@@ -63,6 +63,7 @@ function App() {
                 <strong>Ruler:</strong> Drag endpoints to measure distances.
                 Click the label to edit the length manually.
               </li>
+              <li>Click on measurement to change it.</li>
               <li>
                 Use the <strong>right-click</strong> on any shape to delete it.
               </li>
