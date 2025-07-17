@@ -46,7 +46,31 @@ function App() {
               How to Use the Site Plan App
             </h2>
             <ul className="list-disc list-inside space-y-2 text-sm">
-              {/* your help content here */}
+              <li>
+                Click <strong>Set Scale</strong> to define a known distance
+                between two points.
+              </li>
+              <li>
+                Select a tool:{" "}
+                <strong>Well, Septic, Structure, or Ruler</strong>.
+              </li>
+              <li>Click on the canvas to place the selected item.</li>
+              <li>
+                <strong>Structure:</strong> Will prompt for length & width in
+                feet. Resize/rotate using blue handles.
+              </li>
+              <li>
+                <strong>Ruler:</strong> Drag endpoints to measure distances.
+                Click the label to edit the length manually.
+              </li>
+              <li>
+                Use the <strong>right-click</strong> on any shape to delete it.
+              </li>
+              <li>
+                Measurements will automatically scale based on your defined
+                scale.
+              </li>
+              <li>Click anywhere on the canvas to deselect a shape.</li>
             </ul>
           </div>
         </div>
